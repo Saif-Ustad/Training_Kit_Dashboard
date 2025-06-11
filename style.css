@@ -1,0 +1,135 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f1f4f8;
+  margin: 0;
+}
+
+.d-flex {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  min-height: 100vh;
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px;
+  width: 250px;
+  transition: all 0.3s;
+}
+
+.sidebar h4 {
+  color: #ecf0f1;
+  margin-bottom: 30px;
+}
+
+.nav-link {
+  color: #ffffff;
+  font-weight: 500;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  background-color: #1abc9c;
+  color: #fff;
+}
+
+.submenu {
+  list-style: none;
+  padding-left: 10px;
+  margin: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.submenu.open {
+  max-height: 500px;
+  margin-bottom: 20px;
+  /* enough height for smooth transition */
+}
+
+.submenu li {
+  margin-top: 8px;
+}
+
+.submenu li a {
+  display: block;
+  background-color: #34495e;
+  color: #ecf0f1;
+  padding: 8px 15px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.submenu li a:hover,
+.submenu li a.active {
+  background-color: #1abc9c;
+  color: white;
+}
+
+.toggle-icon {
+  font-size: 1.1rem;
+  transition: transform 0.3s ease;
+}
+
+.toggle-icon.rotate {
+  transform: rotate(90deg);
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 30px;
+}
+
+
+@media (max-width: 768px) {
+  .d-flex {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    min-height: auto;
+  }
+}
+
+.pin-map-container {
+  position: relative;
+  max-width: 800px;
+  margin: 20px auto;
+  display: inline-block;
+}
+
+.pin-map-container img {
+  width: 500px;
+  height: auto;
+}
+
+.pin-button {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #fff;
+  transition: transform 0.2s;
+}
+
+.pin-button.active {
+   background-color: blue;
+}
+
+.pin-button:hover {
+  transform: scale(1.3);
+}
+

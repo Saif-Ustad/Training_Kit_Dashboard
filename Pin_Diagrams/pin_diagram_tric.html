@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>IoT Embedded System Dashboard</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div class="d-flex">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h4><a href="../project.html" style="all: unset; cursor: pointer;">📡 IoT Dashboard</a></h4>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active toggle-btn">📌 Pin Diagrams <span class="toggle-icon rotate">▶</span></a>
+                    <ul class="submenu open">
+                        <li><a href="pin_diagram_ntc.html">1. NTC Sensor</a></li>
+                        <li><a href="pin_diagram_dcmotor.html">2. DC Motor</a></li>
+                        <li><a  class="active" href="pin_diagram_tric.html">3. TRIAC Module</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link toggle-btn">🧩 Circuits <span class="toggle-icon">▶</span></a>
+                    <ul class="submenu">
+                        <li><a href="../Circuits/circuit_ntc.html">1. NTC Sensor</a></li>
+                        <li><a href="../Circuits/circuit_dcmotor.html">2. DC Motor</a></li>
+                        <li><a href="../Circuits/circuit_tric.html">3. TRIAC Module</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Results/result_ntc.html">📊 Results</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <h2>📌 Pin Diagram - TRIAC Module</h2>
+
+            <div class="card mt-4 shadow-sm">
+                <div class="card-body text-center">
+                    <div class="pin-map-container">
+                        <img src="../Assets/pin_image.png" alt="Pin Diagram" class="img-fluid">
+
+                        <!-- Example Pin Positions -->
+                        <div class="pin-button" style="top: 50px; left: 62px;" data-pin="VDD"></div>
+                        <div class="pin-button" style="top: 50px; left: 84px;" data-pin="VSS"></div>
+                        <div class="pin-button active" style="top: 50px; left: 105px;" data-pin="PB9"></div>
+                        <div class="pin-button" style="top: 50px; left: 125px;" data-pin="PB8"></div>
+                        <div class="pin-button" style="top: 50px; left: 145px;" data-pin="BOOT0"></div>
+                        <div class="pin-button" style="top: 50px; left: 165px;" data-pin="PB7"></div>
+                        <div class="pin-button active" style="top: 50px; left: 185px;" data-pin="PB6"></div>
+                        <div class="pin-button" style="top: 50px; left: 205px;" data-pin="PB5"></div>
+                        <div class="pin-button" style="top: 50px; left: 225px;" data-pin="PB4"></div>
+                        <div class="pin-button" style="top: 50px; left: 245px;" data-pin="PB3"></div>
+                        <div class="pin-button" style="top: 50px; left: 265px;" data-pin="PD2"></div>
+                        <div class="pin-button" style="top: 50px; left: 287px;" data-pin="PC12"></div>
+                        <div class="pin-button" style="top: 50px; left: 307PX;" data-pin="PC11"></div>
+                        <div class="pin-button" style="top: 50px; left: 329px;" data-pin="PC10"></div>
+                        <div class="pin-button" style="top: 50px; left: 348px;" data-pin="PA15"></div>
+                        <div class="pin-button" style="top: 50px; left: 369px;" data-pin="PA14"></div>
+
+                        <div class="pin-button" style="top: 410PX; left: 62px;" data-pin="PA3"></div>
+                        <div class="pin-button" style="top: 410px; left: 85px;" data-pin="VSS"></div>
+                        <div class="pin-button" style="top: 410px; left: 105px;" data-pin="VDD"></div>
+                        <div class="pin-button" style="top: 410px; left: 125px;" data-pin="PA4"></div>
+                        <div class="pin-button" style="top: 410px; left: 145px;" data-pin="PA5"></div>
+                        <div class="pin-button" style="top: 410PX; left: 165px;" data-pin="PA6"></div>
+                        <div class="pin-button" style="top: 410px; left: 185px;" data-pin="PA7"></div>
+                        <div class="pin-button" style="top: 410px; left: 205px;" data-pin="PC4"></div>
+                        <div class="pin-button" style="top: 410px; left: 225px;" data-pin="PC5"></div>
+                        <div class="pin-button" style="top: 410px; left: 245px;" data-pin="PB0"></div>
+                        <div class="pin-button" style="top: 410PX; left: 265px;" data-pin="PB1"></div>
+                        <div class="pin-button" style="top: 410px; left: 287px;" data-pin="PB2"></div>
+                        <div class="pin-button" style="top: 410px; left: 307PX;" data-pin="PB10"></div>
+                        <div class="pin-button" style="top: 410px; left: 329px;" data-pin="PB11"></div>
+                        <div class="pin-button" style="top: 410px; left: 348px;" data-pin="VSS"></div>
+                        <div class="pin-button" style="top: 410PX; left: 369px;" data-pin="VDD"></div>
+
+                        <div class="pin-button" style="top: 75PX; left:33px;" data-pin="VDD"></div>
+                        <div class="pin-button" style="top: 96px; left: 33px;" data-pin="PC13"></div>
+                        <div class="pin-button" style="top: 117px; left: 33px;" data-pin="PC14"></div>
+                        <div class="pin-button" style="top: 138px; left: 33px;" data-pin="PC15"></div>
+                        <div class="pin-button" style="top: 158px; left: 33px;" data-pin="PF0"></div>
+                        <div class="pin-button" style="top: 179PX; left: 33px;" data-pin="PF1"></div>
+                        <div class="pin-button" style="top: 199px; left: 33px;" data-pin="NRST"></div>
+                        <div class="pin-button active" style="top: 220px; left: 33px;" data-pin="PC0"></div>
+                        <div class="pin-button" style="top: 241px; left: 33px;" data-pin="PC1"></div>
+                        <div class="pin-button" style="top: 262px; left: 33px;" data-pin="PC2"></div>
+                        <div class="pin-button" style="top: 282PX; left: 33px;" data-pin="PC3"></div>
+                        <div class="pin-button" style="top: 301px; left: 33px;" data-pin="VSSA"></div>
+                        <div class="pin-button" style="top: 322px; left: 33PX;" data-pin="VDDA"></div>
+                        <div class="pin-button" style="top: 342px; left: 33px;" data-pin="PA0"></div>
+                        <div class="pin-button" style="top: 362px; left: 33px;" data-pin="PA1"></div>
+                        <div class="pin-button" style="top: 383PX; left: 33px;" data-pin="PA2"></div>
+
+                        <div class="pin-button" style="top: 75PX; left: 395px;" data-pin="VDD"></div>
+                        <div class="pin-button" style="top: 96px; left: 395px;" data-pin="VSS"></div>
+                        <div class="pin-button" style="top: 117px; left: 395px;" data-pin="PA13"></div>
+                        <div class="pin-button" style="top: 138px; left: 395px;" data-pin="PA12"></div>
+                        <div class="pin-button" style="top: 158px; left: 395px;" data-pin="PA11"></div>
+                        <div class="pin-button active" style="top: 179PX; left: 395px;" data-pin="PA10"></div>
+                        <div class="pin-button active" style="top: 199px; left: 395px;" data-pin="PA9"></div>
+                        <div class="pin-button" style="top: 220px; left: 395px;" data-pin="PA8"></div>
+                        <div class="pin-button" style="top: 241px; left: 395px;" data-pin="PC9"></div>
+                        <div class="pin-button active" style="top: 262px; left: 395px;" data-pin="PC8"></div>
+                        <div class="pin-button" style="top: 282PX; left: 395px;" data-pin="PC7"></div>
+                        <div class="pin-button" style="top: 301px; left: 395px;" data-pin="PC6"></div>
+                        <div class="pin-button" style="top: 322px; left: 395PX;" data-pin="PB15"></div>
+                        <div class="pin-button" style="top: 342px; left: 395px;" data-pin="PB14"></div>
+                        <div class="pin-button" style="top: 362px; left: 395px;" data-pin="PB13"></div>
+                        <div class="pin-button" style="top: 383PX; left: 395px;" data-pin="PB12"></div>
+
+
+
+                        <p class="text-muted mt-3">Pin Diagram or Circuit Preview</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pin Info Modal -->
+    <div class="modal fade" id="pinModal" tabindex="-1" aria-labelledby="pinModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="pinModalLabel">Pin Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="pinInfo">
+                    <!-- Pin info will appear here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="../pinDetails.js"></script>
+
+    <!-- Sidebar Toggle Logic -->
+    <script>
+        console.log("here i am : ", pinDetails);
+
+        document.querySelectorAll('.toggle-btn').forEach(button => {
+            button.addEventListener('click', function () {
+                const submenu = this.nextElementSibling;
+                const icon = this.querySelector('.toggle-icon');
+                submenu.classList.toggle('open');
+                icon.classList.toggle('rotate');
+            });
+        });
+
+
+        document.querySelectorAll('.pin-button').forEach(button => {
+            button.addEventListener('click', () => {
+                const pin = button.getAttribute('data-pin');
+                const details = pinDetails[pin] || [];
+
+                let html = '';
+                if (details.length === 0) {
+                    html = '<p>No information available for this pin.</p>';
+                } else {
+                    html += '<ul class="list-group">';
+                    details.forEach(d => {
+                        html += `<li class="list-group-item"><strong>${d.name}</strong>: ${d.description}</li>`;
+                    });
+                    html += '</ul>';
+                }
+
+                document.getElementById('pinModalLabel').textContent = `Pin: ${pin}`;
+                document.getElementById('pinInfo').innerHTML = html;
+
+                const modal = new bootstrap.Modal(document.getElementById('pinModal'));
+                modal.show();
+            });
+        });
+
+    </script>
+
+
+</body>
+
+</html>
